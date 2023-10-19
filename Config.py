@@ -2,7 +2,7 @@ import os
 import loguru
 
 
-ENVIRONMENT = os.environ.get('ENVIRONMENT', False)
+ENVIRONMENT = os.environ.get('ENVIRONMENT', True)
 LOGGER = loguru.logger
 if ENVIRONMENT:
     try:
